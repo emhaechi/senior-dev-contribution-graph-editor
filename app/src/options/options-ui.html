@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="options-ui.css">
+    </head>
+    <body>
+        <h1>Settings</h1>
+        <p>Adjust any settings below and click Apply to save.</p>
+
+        <form id="sencon-options-form">
+            <div class="mb-2">
+                <h2>Mode</h2>
+                <p>Determine what this extension should do.</p>
+                <fieldset>
+                    <legend>Mode</legend>
+                    <label class="mr-1"><input id="sencon-options-mode-color" type="radio" name="mode">Just Change Colors</label>
+                    <label><input id="sencon-options-mode-animation" type="radio" name="mode">Animate!</label>
+                </fieldset>
+            </div>
+
+            <div class="mb-2-5">
+                <h2>Colors</h2>
+                <p>Change the colors of the contributions graph.</p>
+                <div class="color-inputs-container">
+                    <fieldset id="sencon-options-color-level-0" name="color-level-0" class="mb-0-5">
+                        <legend>Level 0 Color</legend>
+                        <div class="flex-align-items-center">
+                            <input id="sencon-options-color-fill-0" type="color" name="fill">
+                            <label for="sencon-options-color-fill-0">Fill</label>
+                        </div>
+                    </fieldset>
+                    <fieldset id="sencon-options-color-level-1" name="color-level-1" class="mb-0-5">
+                        <legend>Level 1 Color</legend>
+                        <div class="flex-align-items-center">
+                            <input id="sencon-options-color-fill-1" type="color" name="fill">
+                            <label for="sencon-options-color-fill-1">Fill</label>
+                        </div>
+                    </fieldset>
+                    <fieldset id="sencon-options-color-level-2" name="color-level-2" class="mb-0-5">
+                        <legend>Level 2 Color</legend>
+                        <div class="flex-align-items-center">
+                            <input id="sencon-options-color-fill-2" type="color" name="fill">
+                            <label for="sencon-options-color-fill-2">Fill</label>
+                        </div>
+                    </fieldset>
+                    <fieldset id="sencon-options-color-level-3" name="color-level-3" class="mb-0-5">
+                        <legend>Level 3 Color</legend>
+                        <div class="flex-align-items-center">
+                            <input id="sencon-options-color-fill-3" type="color" name="fill">
+                            <label for="sencon-options-color-fill-3">Fill</label>
+                        </div>
+                    </fieldset>
+                    <fieldset id="sencon-options-color-level-4" name="color-level-4" class="mb-0-5">
+                        <legend>Level 4 Color</legend>
+                        <div class="flex-align-items-center">
+                            <input id="sencon-options-color-fill-4" type="color" name="fill">
+                            <label for="sencon-options-color-fill-4">Fill</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <button id="sencon-options-btn-reset-colors" type="button" class="destructive">Reset Colors</button>
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <button id="sencon-options-btn-submit" type="submit" class="primary">Apply</button>
+            </div>
+        </form>
+
+        <script src="../constants/constants.js"></script>
+        <script src="options-ui.js"></script>
+    </body>
+</html>

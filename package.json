@@ -1,0 +1,19 @@
+{
+    "name": "senior-dev-contributor-graph-editor",
+    "version": "1.0.0",
+    "license": "MPL-2.0",
+    "private": true,
+    "scripts": {
+        "start": "cd ./app && web-ext run",
+        "start:logs": "npm run start -- --verbose",
+        "lint": "cd ./app && web-ext lint",
+        "test": "npx jasmine-browser-runner runSpecs",
+        "test:serve": "npx jasmine-browser-runner serve",
+        "build": "cd ./app && web-ext build --no-config-discovery --verbose --overwrite-dest --artifacts-dir ../bin"
+    },
+    "devDependencies": {
+        "web-ext": "~7.5.0",
+        "jasmine-core": "~5.1.0",
+        "jasmine-browser-runner": "~2.3.0"
+    }
+}

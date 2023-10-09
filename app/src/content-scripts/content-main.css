@@ -1,0 +1,72 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+
+
+:root {
+    --sencon-color-fill-0: #00000010;
+    --sencon-color-stroke-0: #00000010;
+    --sencon-color-fill-1: #00000010;
+    --sencon-color-stroke-1: #00000010;
+    --sencon-color-fill-2: #00000010;
+    --sencon-color-stroke-2: #00000010;
+    --sencon-color-fill-3: #00000010;
+    --sencon-color-stroke-3: #00000010;
+    --sencon-color-fill-4: #00000010;
+    --sencon-color-stroke-4: #00000010;
+}
+
+
+.sencon-contrib-0 {
+    fill: var(--sencon-color-fill-0) !important;
+    background-color: var(--sencon-color-fill-0) !important;
+}
+
+.ContributionCalendar-day[data-level="0"] {
+    fill: var(--sencon-color-fill-0);
+    background-color: var(--sencon-color-fill-0);
+}
+
+.sencon-contrib-1 {
+    fill: var(--sencon-color-fill-1) !important;
+    background-color: var(--sencon-color-fill-1) !important;
+}
+
+.ContributionCalendar-day[data-level="1"] {
+    fill: var(--sencon-color-fill-1);
+    background-color: var(--sencon-color-fill-1);
+}
+
+.sencon-contrib-2 {
+    fill: var(--sencon-color-fill-2) !important;
+    background-color: var(--sencon-color-fill-2) !important;
+}
+
+.ContributionCalendar-day[data-level="2"] {
+    fill: var(--sencon-color-fill-2);
+    background-color: var(--sencon-color-fill-2);
+}
+
+.sencon-contrib-3 {
+    fill: var(--sencon-color-fill-3) !important;
+    background-color: var(--sencon-color-fill-3) !important;
+}
+
+.ContributionCalendar-day[data-level="3"] {
+    fill: var(--sencon-color-fill-3);
+    background-color: var(--sencon-color-fill-3);
+}
+
+.sencon-contrib-4 {
+    fill: var(--sencon-color-fill-4) !important;
+    background-color: var(--sencon-color-fill-4) !important;
+}
+
+.ContributionCalendar-day[data-level="4"] {
+    fill: var(--sencon-color-fill-4);
+    background-color: var(--sencon-color-fill-4);
+}
+
+

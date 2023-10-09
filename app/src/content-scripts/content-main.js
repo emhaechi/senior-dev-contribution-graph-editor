@@ -176,7 +176,7 @@ function initStateFromSettings(items) {
 function initTemplate() {
     return new Promise(function(resolve, reject) {
         sencon.initialized = false;
-        if (document.body.classList.contains('page-profile') && sencon.template.overviewTab.classList.contains('selected')) {
+        if (document.body.classList.contains('page-profile') && sencon.template.overviewTab != null && sencon.template.overviewTab.classList.contains('selected')) {
             const graph = document.getElementsByClassName('ContributionCalendar-grid');
             const graphContainer = document.getElementsByClassName('js-yearly-contributions');
             if (graph.length && graphContainer.length) {
@@ -319,6 +319,11 @@ function onPageVisibilityChange() {
     sencon.template.hidden = document.visibilityState === 'hidden';
 }
 
+function getOverviewTab() {
+    return document.getElementById('overview-tab') ||
+        document.querySelector('a[data-tab-item="overview"]');
+}
+
 /**
  * 
  */
@@ -400,7 +405,7 @@ function onPageInit() {
             if (document.body.classList.contains('page-profile')) {
                 // note: there are 2 of these in the template (small- and medium+ bs-like versions) but 
                 // both currently would show ".selected" when either activated
-                const overviewElement = document.querySelector('a[data-tab-item="overview"]');
+                const overviewElement = getOverviewTab();
                 if (sencon.template.overviewTab !== overviewElement) {
                     sencon.template.overviewTab = overviewElement;
                     sencon.template.docObserver.observe(sencon.template.overviewTab, { attributeFilter: ['class'] });
@@ -416,7 +421,7 @@ function onPageInit() {
     const pageProfileElement = document.body;
     sencon.template.docObserver.observe(pageProfileElement, { attributeFilter: ['class'] });
 
-    const overviewElement = document.querySelector('a[data-tab-item="overview"]'); // init if found
+    const overviewElement = getOverviewTab(); // init if found
     if (sencon.template.overviewTab !== overviewElement) {
         sencon.template.overviewTab = overviewElement;
         sencon.template.docObserver.observe(sencon.template.overviewTab, { attributeFilter: ['class'] });

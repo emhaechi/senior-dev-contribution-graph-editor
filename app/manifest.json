@@ -3,7 +3,7 @@
     "name": "Senior Dev Contribution Graph Editor",
     "description": "Show off your contributions on GitHub.",
     "homepage_url": "https://github.com/emhaechi/senior-dev-contribution-graph-editor",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "browser_specific_settings": {
         "gecko": {
             "id": "{9f62ec71-5afc-40d7-9e32-48230547ba6b}"

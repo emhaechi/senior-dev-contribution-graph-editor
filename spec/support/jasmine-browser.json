@@ -1,0 +1,28 @@
+{
+  "srcDir": "./",
+  "srcFiles": [
+    "app/src/constants/**/*.js",
+    "spec/support/src-mocks.js",
+    "app/src/content-scripts/*.js"
+  ],
+  "cssFiles": [
+    "app/src/content-scripts/*.css",
+    "spec/support/src-mocks.css"
+  ],
+  "helpers": [
+    "spec/helpers/**/*.js"
+  ],
+  "specDir": "./",
+  "specFiles": [
+    "!spec/support/**",
+    "spec/**/*[sS]pec.js"
+  ],
+  "env": {
+    "stopSpecOnExpectationFailure": false,
+    "stopOnSpecFailure": false,
+    "random": true
+  },
+  "browser": {
+    "name": "firefox"
+  }
+}

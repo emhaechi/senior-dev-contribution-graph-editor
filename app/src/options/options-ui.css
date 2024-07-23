@@ -1,0 +1,130 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+
+
+:root {
+    --sencon-options-color-background: white;
+    --sencon-options-color-border: #bfbfc9;
+    --sencon-options-color-text-primary: #15141a;
+    --sencon-options-color-text-body: #1c1b22;
+    --sencon-options-color-btn-primary-background: #0060df;
+    --sencon-options-color-btn-primary-text: white;
+    --sencon-options-color-btn-destructive-background: #c50042;
+    --sencon-options-color-btn-destructive-text: white;
+}
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        --sencon-options-color-background: #23222B;
+        --sencon-options-color-border: #5b5b66;
+        --sencon-options-color-text-primary: #fbfbfe;
+        --sencon-options-color-text-body: #f9f9fb;
+        --sencon-options-color-btn-primary-background: #00ddff;
+        --sencon-options-color-btn-primary-text: #15141a;
+        --sencon-options-color-btn-destructive-background: #ff9aa2;
+        --sencon-options-color-btn-destructive-text: #15141a;
+    }
+}
+
+body {
+    color: var(--sencon-options-color-text-primary);
+    background-color: var(--sencon-options-color-background);
+
+    font-size: 1.25rem;
+}
+
+p {
+    color: var(--sencon-options-color-text-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    border-bottom: 1px solid var(--sencon-options-color-border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.3rem
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+fieldset {
+    border: 1px solid var(--sencon-options-color-border);
+    padding: 1.5rem 1rem;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+}
+
+input {
+    margin-right: 0.5rem;
+}
+
+input[type="color"] {
+    background: none;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+}
+
+button.primary {
+    background-color: var(--sencon-options-color-btn-primary-background);
+    color: var(--sencon-options-color-btn-primary-text);
+}
+
+button.destructive {
+    background-color: var(--sencon-options-color-btn-destructive-background);
+    color: var(--sencon-options-color-btn-destructive-text);
+    border: 1px solid white;
+}
+
+.color-inputs-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.mb-0-5 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-2-5 {
+    margin-bottom: 2.5rem;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.flex-align-items-center {
+    display: flex;
+    align-items: center;
+}
